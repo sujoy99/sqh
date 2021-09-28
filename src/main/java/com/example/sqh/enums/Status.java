@@ -1,8 +1,8 @@
 package com.example.sqh.enums;
 
 public enum Status {
-  ACTIVE(1),
-  INACTIVE(0);
+  INACTIVE(0),
+  ACTIVE(1);
 
   private final Integer label;
 

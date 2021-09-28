@@ -24,7 +24,7 @@ public class User {
   @Column(name = "USER_ID")
   private Long id;
 
-  @Column(name = "USER_NAME", length = 25)
+  @Column(name = "USER_NAME", length = 25, unique=true)
   private String name;
 
   @Column(name = "PASSWORD")
@@ -33,9 +33,11 @@ public class User {
   @Column(name = "ADDRESS")
   private String address;
 
+  @Enumerated
   @Column(name = "USER_TYPE")
   private UsetType userType;
 
+  @Enumerated
   @Column(name = "STATUS")
   private Status status;
 }

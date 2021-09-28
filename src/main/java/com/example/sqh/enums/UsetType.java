@@ -1,8 +1,8 @@
 package com.example.sqh.enums;
 
 public enum UsetType {
-  ADMIN(1),
-  BLOGGER(2);
+  BLOGGER(0),
+  ADMIN(1);
 
   private final Integer label;
 
