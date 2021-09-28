@@ -1,0 +1,28 @@
+# Server Configuration
+server:
+  port: 9924
+  address: localhost
+
+  # Hibernate
+  hibernate:
+    ddl-auto: update
+
+
+  # JPA Configuration
+  jpa:
+    # Properties
+    properties:
+        show_sql: true
+        format_sql: true
+
+# Spring Configuration
+spring:
+  h2:
+    console:
+      enabled: 'true'
+      path: /h2
+  datasource:
+    username: sa
+    url: jdbc:h2:mem:memDb;DB_CLOSE_DELAY=-1
+    driverClassName: org.h2.Driver
+    password: ''
